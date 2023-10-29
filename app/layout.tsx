@@ -2,11 +2,12 @@ import type { Metadata } from 'next';
 import { Nunito } from 'next/font/google';
 import './globals.css';
 import { ReactNode } from 'react';
-import Navbar from './components/layout/Navbar';
-import ClientOnly from './components/ClientOnly';
-import LoginModal from './components/modals/LoginModal';
-import RegisterModal from './components/modals/RegisterModal';
-import SearchModal from './components/modals/SearchModal';
+import Navbar from '@/app/components/layout/Navbar';
+import ClientOnly from '@/app/components/ClientOnly';
+import LoginModal from '@/app/components/modals/LoginModal';
+import RegisterModal from '@/app/components/modals/RegisterModal';
+import SearchModal from '@/app/components/modals/SearchModal';
+import RentModal from '@/app/components/modals/RentModal';
 
 const font = Nunito({ subsets: ['latin'] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <LoginModal />
           <RegisterModal />
           <SearchModal />
+          <RentModal />
           <Navbar />
         </ClientOnly>
         {children}

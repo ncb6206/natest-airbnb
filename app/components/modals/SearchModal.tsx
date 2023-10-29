@@ -83,6 +83,8 @@ const SearchModal = () => {
           guestCount: params?.get('guestCount'),
           bathroomCount: params?.get('bathroomCount'),
           category: params?.get('category'),
+          startDate: params?.get('startDate'),
+          endDate: params?.get('endDate'),
           ...updatedQuery,
         },
       },
