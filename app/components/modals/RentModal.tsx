@@ -8,7 +8,7 @@ import { useMemo, useState } from 'react';
 
 import useRentModal from '@/app/hooks/useRentModal';
 import Heading from '../Heading';
-import { categories } from '../layout/Categories';
+import { categories } from '../Navbar/Categories';
 import CategoryInput from '../inputs/CategoryInput';
 import CountrySelect from '../inputs/CountrySelect';
 import Counter from '../inputs/Counter';

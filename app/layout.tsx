@@ -1,8 +1,8 @@
-import type { Metadata } from 'next';
 import { Nunito } from 'next/font/google';
+import type { Metadata } from 'next';
 import './globals.css';
 import { ReactNode } from 'react';
-import Navbar from '@/app/components/layout/Navbar';
+import Navbar from '@/app/components/Navbar/Navbar';
 import ClientOnly from '@/app/components/ClientOnly';
 import LoginModal from '@/app/components/modals/LoginModal';
 import RegisterModal from '@/app/components/modals/RegisterModal';
@@ -27,7 +27,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <RentModal />
           <Navbar />
         </ClientOnly>
-        {children}
+        <div className="pb-20 pt-28">{children}</div>
       </body>
     </html>
   );
